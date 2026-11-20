@@ -1,0 +1,83 @@
+{
+  "family": "Lucide",
+  "version": "0.468.0",
+  "license": "ISC；部分继承 Feather 的图标适用 MIT，完整声明见 LICENSE",
+  "source": "https://github.com/lucide-icons/lucide/tree/0.468.0",
+  "files": [
+    {
+      "name": "search",
+      "localPath": "assets/lucide/search.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/search.svg"
+    },
+    {
+      "name": "chevron-left",
+      "localPath": "assets/lucide/chevron-left.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/chevron-left.svg"
+    },
+    {
+      "name": "bookmark",
+      "localPath": "assets/lucide/bookmark.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/bookmark.svg"
+    },
+    {
+      "name": "swords",
+      "localPath": "assets/lucide/swords.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/swords.svg"
+    },
+    {
+      "name": "gem",
+      "localPath": "assets/lucide/gem.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/gem.svg"
+    },
+    {
+      "name": "history",
+      "localPath": "assets/lucide/history.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/history.svg"
+    },
+    {
+      "name": "info",
+      "localPath": "assets/lucide/info.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/info.svg"
+    },
+    {
+      "name": "trash-2",
+      "localPath": "assets/lucide/trash-2.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/trash-2.svg"
+    },
+    {
+      "name": "x",
+      "localPath": "assets/lucide/x.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/x.svg"
+    },
+    {
+      "name": "check",
+      "localPath": "assets/lucide/check.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/check.svg"
+    },
+    {
+      "name": "external-link",
+      "localPath": "assets/lucide/external-link.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/external-link.svg"
+    },
+    {
+      "name": "chevron-right",
+      "localPath": "assets/lucide/chevron-right.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/chevron-right.svg"
+    },
+    {
+      "name": "rotate-ccw",
+      "localPath": "assets/lucide/rotate-ccw.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/rotate-ccw.svg"
+    },
+    {
+      "name": "triangle-alert",
+      "localPath": "assets/lucide/triangle-alert.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/icons/triangle-alert.svg"
+    },
+    {
+      "name": "LICENSE",
+      "localPath": "assets/lucide/LICENSE",
+      "sourceUrl": "https://raw.githubusercontent.com/lucide-icons/lucide/0.468.0/LICENSE"
+    }
+  ]
+}

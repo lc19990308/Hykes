@@ -1,0 +1,17 @@
+# 海斗宝典后端 · 配置占位
+# 骨架占位，待方案评审后实现；键名与默认值见 docs/技术方案.md 第 6 节。
+server:
+  port: 8080
+
+spring:
+  application:
+    name: haidou-backend
+
+haidou:
+  content:
+    # 数据包发布目录（外部目录，不随 jar 打包）；生产环境通过启动参数 --haidou.content.base-dir 覆盖。
+    base-dir: ./content
+    # latest 指针文件；回滚 = 将该文件指向的 datasetVersion 切回旧版本（原子 rename）。
+    latest-pointer: latest.json
+    # 元信息接口的进程内缓存秒数，防高频轮询直穿；指针文件变更时失效。
+    meta-cache-seconds: 60

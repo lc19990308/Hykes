@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schemaVersion", "dataset", "contentPolicy", "champions", "augments", "items", "summonerSpells", "championAugments", "builds", "sources"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "dataset": {
+      "type": "object",
+      "required": ["datasetVersion", "mode"],
+      "properties": {
+        "datasetVersion": { "type": "string", "maxLength": 80, "pattern": "^demo-[0-9]+\\.[0-9]+$" },
+        "mode": { "const": "demo" },
+        "dataMode": { "const": "simulated" },
+        "compiledAt": { "type": ["string", "null"] },
+        "gamePatch": { "type": ["string", "null"] }
+      }
+    },
+    "contentPolicy": { "type": "object" },
+    "champions": { "type": "array", "items": { "allOf": [
+      { "$ref": "#/$defs/named" },
+      { "properties": { "summonerSpells": { "$ref": "#/$defs/ids" } } }
+    ] } },
+    "augments": { "type": "array", "items": { "$ref": "#/$defs/named" } },
+    "items": { "type": "array", "items": { "$ref": "#/$defs/named" } },
+    "summonerSpells": { "type": "array", "items": { "$ref": "#/$defs/named" } },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/identified" } },
+    "championAugments": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["championId", "augmentId"],
+        "properties": {
+          "championId": { "$ref": "#/$defs/id" }, "augmentId": { "$ref": "#/$defs/id" }
+        }
+      }
+    },
+    "builds": { "type": "array", "items": { "allOf": [
+      { "$ref": "#/$defs/named" },
+      { "required": ["championId", "coreItemIds"], "properties": {
+        "championId": { "$ref": "#/$defs/id" },
+        "coreItemIds": { "$ref": "#/$defs/ids" },
+        "startingItems": { "type": "array", "items": { "$ref": "#/$defs/itemRef" } },
+        "boots": { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/itemRef" }] },
+        "alternatives": { "type": "array", "items": { "type": "object", "required": ["replaceItemId", "withItemId"],
+          "properties": { "replaceItemId": { "$ref": "#/$defs/id" }, "withItemId": { "$ref": "#/$defs/id" } } } }
+      } }
+    ] } }
+  },
+  "$defs": {
+    "id": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "ids": { "type": "array", "items": { "$ref": "#/$defs/id" } },
+    "identified": { "type": "object", "required": ["id"], "properties": {
+      "id": { "$ref": "#/$defs/id" }, "assetKey": { "$ref": "#/$defs/id" }, "sourceIds": { "$ref": "#/$defs/ids" }
+    } },
+    "named": { "allOf": [ { "$ref": "#/$defs/identified" }, { "required": ["name"], "properties": {
+      "name": { "type": "string", "minLength": 1 }
+    } } ] },
+    "itemRef": { "type": "object", "required": ["itemId"], "properties": { "itemId": { "$ref": "#/$defs/id" } } }
+  }
+}

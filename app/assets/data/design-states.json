@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "demo-0.1",
+  "usage": "设计场景资料。逐个套用 setup 到正式数据副本；各场景互相独立，不合并写回正常数据。",
+  "pages": [
+    {
+      "id": "champions",
+      "name": "英雄列表",
+      "objects": [
+        "157",
+        "22",
+        "887",
+        "777",
+        "114",
+        "4",
+        "360",
+        "51"
+      ],
+      "title": "英雄",
+      "searchLabel": "搜索英雄",
+      "placeholder": "名称、称号、别名或拼音",
+      "navigation": [
+        "英雄",
+        "海克斯",
+        "收藏"
+      ]
+    },
+    {
+      "id": "champion-detail",
+      "name": "英雄详情",
+      "championId": "157",
+      "tabs": [
+        "概览",
+        "强化",
+        "出装"
+      ],
+      "defaultTab": "概览",
+      "favoriteLabels": [
+        "收藏",
+        "已收藏"
+      ],
+      "labels": [
+        "示例推荐",
+        "示例出装，仅供练习",
+        "模拟数据"
+      ]
+    },
+    {
+      "id": "augments",
+      "name": "海克斯列表",
+      "title": "海克斯",
+      "searchLabel": "搜索海克斯",
+      "placeholder": "名称或别名",
+      "filters": [
+        "全部",
+        "银色",
+        "金色",
+        "棱彩",
+        "待核对"
+      ]
+    },
+    {
+      "id": "augment-detail",
+      "name": "海克斯详情",
+      "augmentId": "1337",
+      "sections": [
+        "效果",
+        "出现阶段",
+        "适配英雄"
+      ],
+      "associationOrder": "按人工推荐顺序，再按英雄 displayOrder；不由统计排序"
+    },
+    {
+      "id": "favorites",
+      "name": "收藏",
+      "title": "收藏",
+      "filters": [
+        "全部",
+        "英雄",
+        "海克斯"
+      ],
+      "items": [
+        {
+          "entityType": "champion",
+          "entityId": "157",
+          "savedAt": "2026-11-17T04:28:18.010843+00:00"
+        },
+        {
+          "entityType": "augment",
+          "entityId": "1337",
+          "savedAt": "2026-11-17T04:28:18.010843+00:00"
+        }
+      ]
+    },
+    {
+      "id": "recents",
+      "name": "最近查看",
+      "title": "最近查看",
+      "clearAction": "清空",
+      "items": [
+        {
+          "entityType": "augment",
+          "entityId": "1337",
+          "viewedAt": "2026-11-17T04:28:18.010843+00:00"
+        },
+        {
+          "entityType": "champion",
+          "entityId": "157",
+          "viewedAt": "2026-11-17T04:28:18.010843+00:00"
+        }
+      ]
+    },
+    {
+      "id": "data-info",
+      "name": "数据说明",
+      "title": "数据说明",
+      "paragraphs": [
+        "这是个人练习使用的本地示例内容，数据版本为 demo-0.1。",
+        "当前游戏版本未确认；资料来源页曾显示 16.22，不代表当前客户端版本。",
+        "所有胜场、场次与胜率都是模拟数据。推荐和出装为人工示例，仅供练习。",
+        "来源已核对仅表示对照公开页面，具体机制请以当前游戏客户端为准。",
+        "图片来源及使用边界保存在本地素材索引；未取得再分发或商用授权。",
+        "收藏与最近查看仅保存于本机；保存失败时本次会话仍可继续使用。"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "loading",
+      "page": "英雄列表",
+      "title": "正在加载本地数据",
+      "body": "读取完成后显示列表。",
+      "setup": {
+        "loadState": "loading"
+      },
+      "actions": []
+    },
+    {
+      "id": "load-failed",
+      "page": "英雄列表",
+      "title": "本地数据加载失败",
+      "body": "请重试读取本地内容。",
+      "setup": {
+        "loadState": "failed"
+      },
+      "actions": [
+        "重试"
+      ]
+    },
+    {
+      "id": "no-champion-results",
+      "page": "英雄列表",
+      "title": "没有找到相关英雄",
+      "body": "试试其他名称，或重置搜索与定位。",
+      "setup": {
+        "query": "不存在的英雄",
+        "role": "全部"
+      },
+      "actions": [
+        "重置条件"
+      ]
+    },
+    {
+      "id": "filter-intersection-empty",
+      "page": "英雄列表",
+      "title": "没有找到相关英雄",
+      "body": "当前关键词与定位没有匹配结果。",
+      "setup": {
+        "query": "寒冰",
+        "role": "法师"
+      },
+      "actions": [
+        "重置条件"
+      ]
+    },
+    {
+      "id": "no-augment-results",
+      "page": "海克斯列表",
+      "title": "没有找到相关海克斯",
+      "body": "试试其他名称或稀有度。",
+      "setup": {
+        "query": "不存在的强化",
+        "rarity": "silver"
+      },
+      "actions": [
+        "重置条件"
+      ]
+    },
+    {
+      "id": "no-links",
+      "page": "海克斯详情",
+      "title": "暂未整理适配英雄",
+      "body": "效果仍可阅读，后续再补充关联。",
+      "setup": {
+        "augmentId": "1170",
+        "omitRelationsForAugment": "1170"
+      },
+      "actions": []
+    },
+    {
+      "id": "no-build",
+      "page": "英雄详情·出装",
+      "title": "暂未整理出装方案",
+      "body": "可继续查看概览和强化。",
+      "setup": {
+        "championId": "887",
+        "omitBuildsForChampion": "887"
+      },
+      "actions": []
+    },
+    {
+      "id": "no-recommendations",
+      "page": "英雄详情·强化",
+      "title": "暂未整理强化推荐",
+      "body": "可继续查看概览和出装。",
+      "setup": {
+        "championId": "887",
+        "omitRelationsForChampion": "887"
+      },
+      "actions": []
+    },
+    {
+      "id": "missing-stats",
+      "page": "英雄详情",
+      "title": "暂无统计",
+      "body": "示例推荐可继续阅读。",
+      "setup": {
+        "championId": "887",
+        "stats": null
+      },
+      "actions": []
+    },
+    {
+      "id": "low-sample",
+      "page": "英雄详情·强化",
+      "title": "模拟数据 · 样本较少",
+      "body": "39 / 75 胜场，胜率 52.0%；不作为强度排序。",
+      "setup": {
+        "championId": "157",
+        "augmentId": "1058",
+        "wins": 39,
+        "games": 75,
+        "isSimulated": true
+      },
+      "actions": []
+    },
+    {
+      "id": "stale",
+      "page": "海克斯详情",
+      "title": "内容可能过期",
+      "body": "请核对当前游戏版本后使用。",
+      "setup": {
+        "augmentId": "1058",
+        "isStale": true
+      },
+      "actions": []
+    },
+    {
+      "id": "pending",
+      "page": "海克斯详情",
+      "title": "效果待核对",
+      "body": "攻击距离变化与属性增益的具体数值待核对。",
+      "setup": {
+        "augmentId": "1134",
+        "effectStatus": "pending"
+      },
+      "actions": []
+    },
+    {
+      "id": "unknown-rarity",
+      "page": "海克斯列表",
+      "title": "稀有度待核对",
+      "body": "不归入银色、金色或棱彩筛选。",
+      "setup": {
+        "augmentId": "1170",
+        "rarity": "unknown"
+      },
+      "actions": []
+    },
+    {
+      "id": "favorites-empty",
+      "page": "收藏",
+      "title": "还没有收藏内容",
+      "body": "在英雄或海克斯详情中收藏，方便下次查看。",
+      "setup": {
+        "favorites": []
+      },
+      "actions": [
+        "浏览英雄"
+      ]
+    },
+    {
+      "id": "favorite-invalid",
+      "page": "收藏",
+      "title": "内容已失效",
+      "body": "保留对象 ID，可移除该条记录。",
+      "setup": {
+        "favorites": [
+          {
+            "entityType": "augment",
+            "entityId": "fixture-removed",
+            "savedAt": "2026-11-17T04:28:18.010843+00:00"
+          }
+        ]
+      },
+      "actions": [
+        "移除"
+      ]
+    },
+    {
+      "id": "storage-write-failed",
+      "page": "收藏",
+      "title": "本次更改未能保存，重启后可能丢失",
+      "body": "当前会话中仍可继续收藏。",
+      "setup": {
+        "storageWrite": "reject",
+        "sessionFavorites": [
+          {
+            "entityType": "champion",
+            "entityId": "157",
+            "savedAt": "2026-11-17T04:28:18.010843+00:00"
+          }
+        ]
+      },
+      "actions": []
+    },
+    {
+      "id": "storage-corrupt",
+      "page": "收藏",
+      "title": "收藏记录读取失败，已恢复为空",
+      "body": "最近查看不受影响。",
+      "setup": {
+        "rawFavorites": "{broken-json",
+        "recentsUnaffected": true
+      },
+      "actions": [
+        "浏览英雄"
+      ]
+    },
+    {
+      "id": "storage-future",
+      "page": "收藏",
+      "title": "当前版本无法保存这份收藏记录",
+      "body": "原记录保留，本次更改仅在当前会话有效。",
+      "setup": {
+        "rawFavorites": {
+          "schemaVersion": 99,
+          "items": []
+        },
+        "preserveOriginal": true
+      },
+      "actions": []
+    },
+    {
+      "id": "detail-missing",
+      "page": "英雄详情",
+      "title": "内容不存在或已移除",
+      "body": "返回继续浏览其他内容。",
+      "setup": {
+        "championId": "fixture-missing",
+        "recordRecent": false
+      },
+      "actions": [
+        "返回"
+      ]
+    },
+    {
+      "id": "image-failed",
+      "page": "英雄列表",
+      "title": "亚索",
+      "body": "图片无法读取时移除图片列，名称和入口保留。",
+      "setup": {
+        "championId": "157",
+        "imageLoad": "fail"
+      },
+      "actions": []
+    },
+    {
+      "id": "broken-item-reference",
+      "page": "英雄详情·出装",
+      "title": "部分装备暂不可用",
+      "body": "其余装备名称、顺序和方案继续显示。",
+      "setup": {
+        "buildId": "build-157-01",
+        "replaceCoreItemId": {
+          "from": "3072",
+          "to": "fixture-missing-item"
+        }
+      },
+      "actions": []
+    },
+    {
+      "id": "history-empty",
+      "page": "最近查看",
+      "title": "还没有最近查看",
+      "body": "打开英雄或海克斯详情后，记录会显示在这里。",
+      "setup": {
+        "recents": []
+      },
+      "actions": [
+        "浏览英雄"
+      ]
+    },
+    {
+      "id": "clear-history",
+      "page": "最近查看",
+      "title": "清空最近查看？",
+      "body": "收藏不受影响。",
+      "setup": {
+        "dialogOpen": true,
+        "initialFocus": "取消",
+        "escapeAction": "取消"
+      },
+      "actions": [
+        "取消",
+        "清空"
+      ]
+    },
+    {
+      "id": "search-length",
+      "page": "英雄列表",
+      "title": "最多输入 50 个字符",
+      "body": "超出上限时停止追加；中文组合结束后再查询。",
+      "setup": {
+        "input": "亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚亚",
+        "limit": 50
+      },
+      "actions": []
+    },
+    {
+      "id": "history-capacity",
+      "page": "最近查看",
+      "title": "最近查看最多 20 项",
+      "body": "按时间倒序保留最后 20 项；最早的亚索移出历史。",
+      "setup": {
+        "fixtureEntities": [
+          {
+            "entityType": "champion",
+            "entityId": "fixture-only-21",
+            "name": "历史容量测试对象（非正式英雄）"
+          }
+        ],
+        "visitSequence": [
+          {
+            "entityType": "champion",
+            "entityId": "157",
+            "viewedAt": "2026-11-17T04:28:18.017435+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "22",
+            "viewedAt": "2026-11-17T04:28:19.017541+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "887",
+            "viewedAt": "2026-11-17T04:28:20.017730+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "777",
+            "viewedAt": "2026-11-17T04:28:21.017734+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "114",
+            "viewedAt": "2026-11-17T04:28:22.017737+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "4",
+            "viewedAt": "2026-11-17T04:28:23.017740+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "360",
+            "viewedAt": "2026-11-17T04:28:24.017742+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "51",
+            "viewedAt": "2026-11-17T04:28:25.017745+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1337",
+            "viewedAt": "2026-11-17T04:28:26.017748+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1058",
+            "viewedAt": "2026-11-17T04:28:27.017750+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "3078",
+            "viewedAt": "2026-11-17T04:28:28.017753+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1134",
+            "viewedAt": "2026-11-17T04:28:29.017755+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1004",
+            "viewedAt": "2026-11-17T04:28:30.017757+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1389",
+            "viewedAt": "2026-11-17T04:28:31.017760+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "2054",
+            "viewedAt": "2026-11-17T04:28:32.017762+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1103",
+            "viewedAt": "2026-11-17T04:28:33.017765+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1081",
+            "viewedAt": "2026-11-17T04:28:34.017767+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1205",
+            "viewedAt": "2026-11-17T04:28:35.017770+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1077",
+            "viewedAt": "2026-11-17T04:28:36.017772+00:00"
+          },
+          {
+            "entityType": "augment",
+            "entityId": "1170",
+            "viewedAt": "2026-11-17T04:28:37.017775+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "fixture-only-21",
+            "viewedAt": "2026-11-17T04:28:38.017777+00:00"
+          }
+        ],
+        "expectedCount": 20,
+        "expectedFirst": "champion:fixture-only-21",
+        "expectedEvicted": "champion:157",
+        "note": "第21个对象仅在本场景注入，不写入正式数据。"
+      },
+      "actions": []
+    },
+    {
+      "id": "history-deduplicate",
+      "page": "最近查看",
+      "title": "重复查看前移",
+      "body": "再次打开亚索后，亚索只保留一条并移到最前。",
+      "setup": {
+        "visitSequence": [
+          {
+            "entityType": "champion",
+            "entityId": "157",
+            "viewedAt": "2026-11-17T04:28:18.017787+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "22",
+            "viewedAt": "2026-11-17T04:28:19.017950+00:00"
+          },
+          {
+            "entityType": "champion",
+            "entityId": "157",
+            "viewedAt": "2026-11-17T04:28:20.017959+00:00"
+          }
+        ],
+        "expectedOrder": [
+          "champion:157",
+          "champion:22"
+        ]
+      },
+      "actions": []
+    }
+  ]
+}

@@ -1,0 +1,1821 @@
+{
+  "schemaVersion": 1,
+  "dataset": {
+    "datasetVersion": "demo-0.1",
+    "mode": "demo",
+    "compiledAt": "2026-11-17T04:28:18.010843+00:00",
+    "sourceIds": [
+      "editorial",
+      "asset-index",
+      "champion-157",
+      "champion-22",
+      "champion-887",
+      "champion-777",
+      "champion-114",
+      "champion-4",
+      "champion-360",
+      "champion-51",
+      "augment-3048",
+      "augment-1058",
+      "augment-3078",
+      "augment-1134",
+      "augment-1004",
+      "augment-1389",
+      "augment-2062",
+      "augment-3075",
+      "augment-1081",
+      "augment-1206",
+      "augment-1077",
+      "augment-1170"
+    ],
+    "gamePatch": null
+  },
+  "contentPolicy": {
+    "verifiedMeaning": "已逐条对照读取的来源页面；不表示官方核验或当前版本保证。",
+    "pendingMeaning": "有来源摘要，但数值、分支或交互尚未确认。",
+    "stats": "仅人工模拟；无数据保存为 null，不使用站方统计。",
+    "recommendations": "人工示例顺序，不来自胜率排名。",
+    "imagePathBase": "项目根目录；JSON 中所有 iconPath 均相对项目根目录。",
+    "lowSampleThreshold": 200
+  },
+  "champions": [
+    {
+      "id": "157",
+      "name": "亚索",
+      "title": "疾风剑豪",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "aliases": [
+        "风男"
+      ],
+      "pinyin": "yasuo",
+      "initials": "ys",
+      "displayOrder": 1,
+      "iconPath": "assets/aramkit/champions/157-617df344cd83.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:157",
+      "overview": "利用兵线接近目标，以连续攻击和技能衔接输出。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > E > W",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "32"
+      ],
+      "summonerSpellNote": "闪现配合标记，练习接近与撤离。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-157",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "22",
+      "name": "艾希",
+      "title": "寒冰射手",
+      "roles": [
+        "射手"
+      ],
+      "aliases": [
+        "寒冰"
+      ],
+      "pinyin": "aixi",
+      "initials": "ax",
+      "displayOrder": 2,
+      "iconPath": "assets/aramkit/champions/22-4195f3b66fb9.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:22",
+      "overview": "保持距离持续普攻，用减速配合队友追击。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "W > Q > E",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "1"
+      ],
+      "summonerSpellNote": "闪现配合净化，练习远程输出与解除控制。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-22",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "887",
+      "name": "格温",
+      "title": "灵罗娃娃",
+      "roles": [
+        "战士"
+      ],
+      "aliases": [
+        "剪刀妹"
+      ],
+      "pinyin": "gewen",
+      "initials": "gw",
+      "displayOrder": 3,
+      "iconPath": "assets/aramkit/champions/887-52f020b016e8.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:887",
+      "overview": "围绕近距离持续作战，观察进场位置和技能空档。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > E > W",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "32"
+      ],
+      "summonerSpellNote": "闪现配合标记，练习进入近距离输出位置。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-887",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "777",
+      "name": "永恩",
+      "title": "封魔剑魂",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "aliases": [
+        "永恩哥哥"
+      ],
+      "pinyin": "yongen",
+      "initials": "ye",
+      "displayOrder": 4,
+      "iconPath": "assets/aramkit/champions/777-6d1f24b44ca1.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:777",
+      "overview": "寻找侧面切入时机，进场前规划返回位置。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > E > W",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "32"
+      ],
+      "summonerSpellNote": "闪现配合标记，练习切入时机。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-777",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "114",
+      "name": "菲奥娜",
+      "title": "无双剑姬",
+      "roles": [
+        "战士"
+      ],
+      "aliases": [
+        "剑姬"
+      ],
+      "pinyin": "feiaona",
+      "initials": "fan",
+      "displayOrder": 5,
+      "iconPath": "assets/aramkit/champions/114-f7e51288180c.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:114",
+      "overview": "观察目标破绽与关键控制，避免无准备地承受集火。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > E > W",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "32"
+      ],
+      "summonerSpellNote": "闪现配合标记，练习近身和规避控制。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-114",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "4",
+      "name": "崔斯特",
+      "title": "卡牌大师",
+      "roles": [
+        "法师"
+      ],
+      "aliases": [
+        "卡牌"
+      ],
+      "pinyin": "cuisite",
+      "initials": "cst",
+      "displayOrder": 6,
+      "iconPath": "assets/aramkit/champions/4-6f3d7d0f980b.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:4",
+      "overview": "选牌控制衔接队友输出，优先保证施法与走位空间。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > W > E",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "1"
+      ],
+      "summonerSpellNote": "闪现配合净化，练习控制衔接和自保。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-4",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "360",
+      "name": "莎弥拉",
+      "title": "沙漠玫瑰",
+      "roles": [
+        "射手"
+      ],
+      "aliases": [
+        "沙弥拉"
+      ],
+      "pinyin": "shamila",
+      "initials": "sml",
+      "displayOrder": 7,
+      "iconPath": "assets/aramkit/champions/360-1e5fddc77669.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:360",
+      "overview": "等待队友创造进场窗口，再衔接技能与攻击。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > E > W",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "1"
+      ],
+      "summonerSpellNote": "闪现配合净化，练习进场后的控制处理。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-360",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    },
+    {
+      "id": "51",
+      "name": "凯特琳",
+      "title": "皮城女警",
+      "roles": [
+        "射手"
+      ],
+      "aliases": [
+        "女警"
+      ],
+      "pinyin": "kaitelin",
+      "initials": "ktl",
+      "displayOrder": 8,
+      "iconPath": "assets/aramkit/champions/51-e7e2335bda9a.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "champions:51",
+      "overview": "利用远程攻击与夹子限制走位，避免被迫近身。",
+      "overviewIsExample": true,
+      "balanceNote": "模式调整待核对；来源页曾显示 16.22，本地练习数据不承诺当前版本数值。",
+      "balanceStatus": "pending",
+      "skillPriority": "Q > W > E",
+      "skillPriorityIsExample": true,
+      "skillPriorityNote": "人工练习加点示例，不沿用站方最优加点排名。",
+      "summonerSpells": [
+        "4",
+        "1"
+      ],
+      "summonerSpellNote": "闪现配合净化，练习维持攻击距离。",
+      "summonerSpellsIsExample": true,
+      "sourceIds": [
+        "champion-51",
+        "editorial"
+      ],
+      "stats": null,
+      "isStale": false
+    }
+  ],
+  "augments": [
+    {
+      "id": "3048",
+      "name": "弹跳蜜蜂",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "施放技能后，下一次普攻会向附近敌人弹跳；任务可提升攻击力与弹跳次数。",
+      "effectStatus": "pending",
+      "effectNote": "任务等级、弹跳伤害与具体目标判定待核对；动态进度不作为固定效果。",
+      "stages": [
+        1,
+        2,
+        3
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 1,
+      "iconPath": "assets/aramkit/augments/1337-508a6c4b3121.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1337",
+      "sourceIds": [
+        "augment-3048"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1058",
+      "name": "秘术冲拳",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "攻击特效使各个技能的冷却时间缩减 1.25 秒。",
+      "effectStatus": "verified",
+      "effectNote": "特殊技能与冷却缩减交互未逐项核对。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 2,
+      "iconPath": "assets/aramkit/augments/1058-9450203898b2.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1058",
+      "sourceIds": [
+        "augment-1058"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "3078",
+      "name": "鼓声暴起 低音轰鸣",
+      "aliases": [],
+      "rarity": "gold",
+      "effectText": "施放技能后，6 秒内的下一次普攻加快、附带魔法伤害，并获得短时衰减移速。",
+      "effectStatus": "pending",
+      "effectNote": "近远程分支及伤害系数的图标文本未完整解析，不填固定伤害。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 3,
+      "iconPath": "assets/aramkit/augments/3078-990e3c0de832.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:3078",
+      "sourceIds": [
+        "augment-3078"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1134",
+      "name": "亮出你的剑",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "变为近战状态，获得攻击力、生命值、攻击速度、生命偷取和移动速度增益。",
+      "effectStatus": "pending",
+      "effectNote": "攻击距离会改变；各属性最终增益与损失距离相关，固定百分比待核对。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 4,
+      "iconPath": "assets/aramkit/augments/1134-e20875a22664.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1134",
+      "sourceIds": [
+        "augment-1134"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1004",
+      "name": "回归基本功",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "终极技能被封印；获得 35% 技能伤害、治疗效果与护盾增益，以及 70 技能急速。",
+      "effectStatus": "verified",
+      "effectNote": "无法使用终极技能是关键代价。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 5,
+      "iconPath": "assets/aramkit/augments/1004-78e8488ef120.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1004",
+      "sourceIds": [
+        "augment-1004"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1389",
+      "name": "男爵之手",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "获得 25% 适应之力，附近友方小兵获得大幅增强。",
+      "effectStatus": "verified",
+      "effectNote": "小兵增强的具体属性与范围未在本轮核对。",
+      "stages": [
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 6,
+      "iconPath": "assets/aramkit/augments/1389-7472d9ea0245.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1389",
+      "sourceIds": [
+        "augment-1389"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "2062",
+      "name": "回响施放",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "施放所选技能时，向鼠标位置派出复制体，0.25 秒后再次施放该技能。",
+      "effectStatus": "pending",
+      "effectNote": "页面保留“所选技能”占位；适用技能与复制交互需在游戏内核对。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 7,
+      "iconPath": "assets/aramkit/augments/2054-43e817f1deef.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:2054",
+      "sourceIds": [
+        "augment-2062"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "3075",
+      "name": "反冲",
+      "aliases": [],
+      "rarity": "gold",
+      "effectText": "所选技能造成 25% 额外伤害，并使你因反冲后退。",
+      "effectStatus": "pending",
+      "effectNote": "页面未明确所选技能；后退距离与碰撞处理待核对。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 8,
+      "iconPath": "assets/aramkit/augments/1103-1a5a4c6f853b.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1103",
+      "sourceIds": [
+        "augment-3075"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1081",
+      "name": "踢踏舞",
+      "aliases": [],
+      "rarity": "prismatic",
+      "effectText": "攻击提供移动速度与攻击速度增益，可叠加并刷新，持续 5 秒。",
+      "effectStatus": "pending",
+      "effectNote": "攻速字段存在模板占位；叠加细节与每层数值待核对。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 9,
+      "iconPath": "assets/aramkit/augments/1081-86b9e8628bdc.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1081",
+      "sourceIds": [
+        "augment-1081"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1206",
+      "name": "魔法转物理",
+      "aliases": [],
+      "rarity": "silver",
+      "effectText": "法术强度转化为额外攻击力，每点法术强度转化为 0.6 攻击力，并获得 15% 攻击力。",
+      "effectStatus": "verified",
+      "effectNote": "会改变属性构成；本轮不推算与其他强化的结算顺序。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 10,
+      "iconPath": "assets/aramkit/augments/1205-5119d952d699.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1205",
+      "sourceIds": [
+        "augment-1206"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1077",
+      "name": "灵魂虹吸",
+      "aliases": [],
+      "rarity": "gold",
+      "effectText": "获得 25% 暴击几率，以及作用于暴击的 12% 生命偷取。",
+      "effectStatus": "verified",
+      "effectNote": "特殊暴击与技能暴击的吸血交互未逐项核对。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 11,
+      "iconPath": "assets/aramkit/augments/1077-4675568cbcfb.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1077",
+      "sourceIds": [
+        "augment-1077"
+      ],
+      "isStale": false,
+      "stats": null
+    },
+    {
+      "id": "1170",
+      "name": "万用瞄准镜",
+      "aliases": [],
+      "rarity": "silver",
+      "effectText": "获得额外攻击距离。",
+      "effectStatus": "pending",
+      "effectNote": "页面显示 75 / 50，但近远程图标语义未完整解析；不擅自对应数值。",
+      "stages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stageStatus": "source-page-only",
+      "displayOrder": 12,
+      "iconPath": "assets/aramkit/augments/1170-42e9818c9562.webp",
+      "imageWidth": 128,
+      "imageHeight": 128,
+      "assetKey": "augments:1170",
+      "sourceIds": [
+        "augment-1170"
+      ],
+      "isStale": false,
+      "stats": null
+    }
+  ],
+  "items": [
+    {
+      "id": "2003",
+      "name": "生命药水",
+      "iconPath": "assets/aramkit/items/2003-fbb3ae33dd8b.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:2003",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3006",
+      "name": "狂战士胫甲",
+      "iconPath": "assets/aramkit/items/3006-d954ceac7771.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3006",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3020",
+      "name": "法师之靴",
+      "iconPath": "assets/aramkit/items/3020-7a3b9e95e0d7.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3020",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3031",
+      "name": "无尽之刃",
+      "iconPath": "assets/aramkit/items/3031-1dd45a28b705.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3031",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3036",
+      "name": "多米尼克领主的致意",
+      "iconPath": "assets/aramkit/items/3036-247cb1b39834.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3036",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3047",
+      "name": "铁板靴",
+      "iconPath": "assets/aramkit/items/3047-34324b748334.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3047",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3072",
+      "name": "饮血剑",
+      "iconPath": "assets/aramkit/items/3072-3fb1a08e47e0.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3072",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3074",
+      "name": "贪欲九头蛇",
+      "iconPath": "assets/aramkit/items/3074-f23d80f8200e.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3074",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3078",
+      "name": "三相之力",
+      "iconPath": "assets/aramkit/items/3078-cd0979ddc547.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3078",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3085",
+      "name": "卢安娜的飓风",
+      "iconPath": "assets/aramkit/items/3085-03fd570c615c.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3085",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3089",
+      "name": "灭世者的死亡之帽",
+      "iconPath": "assets/aramkit/items/3089-cfad6d330ebd.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3089",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3094",
+      "name": "疾射火炮",
+      "iconPath": "assets/aramkit/items/3094-fe7a00ebbc01.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3094",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3100",
+      "name": "巫妖之祸",
+      "iconPath": "assets/aramkit/items/3100-3a213ec43770.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3100",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3111",
+      "name": "水银之靴",
+      "iconPath": "assets/aramkit/items/3111-26d7b45b4e3d.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3111",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3112",
+      "name": "守护者法球",
+      "iconPath": "assets/aramkit/items/3112-6f74ca40fb65.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3112",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3115",
+      "name": "纳什之牙",
+      "iconPath": "assets/aramkit/items/3115-897b9646a9de.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3115",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3153",
+      "name": "破败王者之刃",
+      "iconPath": "assets/aramkit/items/3153-36d7d980d54c.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3153",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3156",
+      "name": "玛莫提乌斯之噬",
+      "iconPath": "assets/aramkit/items/3156-2e954011d20a.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3156",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3157",
+      "name": "中娅沙漏",
+      "iconPath": "assets/aramkit/items/3157-633022d1ef8a.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3157",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3177",
+      "name": "守护者之刃",
+      "iconPath": "assets/aramkit/items/3177-b0b616280c0f.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3177",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "3184",
+      "name": "守护者战锤",
+      "iconPath": "assets/aramkit/items/3184-0690dabb7344.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:3184",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "4633",
+      "name": "裂隙制造者",
+      "iconPath": "assets/aramkit/items/4633-a1f4ae0da73b.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:4633",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "6333",
+      "name": "死亡之舞",
+      "iconPath": "assets/aramkit/items/6333-2647b492690e.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:6333",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "6610",
+      "name": "焚天",
+      "iconPath": "assets/aramkit/items/6610-6b76d79e679a.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:6610",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "6655",
+      "name": "卢登的回声",
+      "iconPath": "assets/aramkit/items/6655-09fa4c555646.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:6655",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "6672",
+      "name": "海妖杀手",
+      "iconPath": "assets/aramkit/items/6672-9250843b2057.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:6672",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "6676",
+      "name": "收集者",
+      "iconPath": "assets/aramkit/items/6676-08cb1586917a.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "items:6676",
+      "sourceIds": [
+        "asset-index"
+      ]
+    }
+  ],
+  "summonerSpells": [
+    {
+      "id": "4",
+      "name": "闪现",
+      "iconPath": "assets/aramkit/summoner-spells/4-ed4c4cfb61c1.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "summoner-spells:4",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "32",
+      "name": "标记",
+      "iconPath": "assets/aramkit/summoner-spells/32-4a528e051c13.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "summoner-spells:32",
+      "sourceIds": [
+        "asset-index"
+      ]
+    },
+    {
+      "id": "1",
+      "name": "净化",
+      "iconPath": "assets/aramkit/summoner-spells/1-9bc4358365a3.webp",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "assetKey": "summoner-spells:1",
+      "sourceIds": [
+        "asset-index"
+      ]
+    }
+  ],
+  "championAugments": [
+    {
+      "championId": "157",
+      "augmentId": "3048",
+      "reason": "技能接普攻的节奏便于练习弹跳触发。",
+      "caution": "任务收益依赖实际攻击机会。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": {
+        "wins": 260,
+        "games": 500,
+        "isSimulated": true,
+        "gamePatch": null,
+        "segment": "练习样本"
+      },
+      "sourceIds": [
+        "editorial",
+        "champion-157",
+        "augment-3048"
+      ]
+    },
+    {
+      "championId": "157",
+      "augmentId": "1058",
+      "reason": "用连续攻击练习技能冷却与输出衔接。",
+      "caution": "冷却减少不等于可以无条件进场。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": {
+        "wins": 39,
+        "games": 75,
+        "isSimulated": true,
+        "gamePatch": null,
+        "segment": "练习样本"
+      },
+      "sourceIds": [
+        "editorial",
+        "champion-157",
+        "augment-1058"
+      ]
+    },
+    {
+      "championId": "157",
+      "augmentId": "1206",
+      "reason": "演示将法强来源转换为攻击力的路线。",
+      "caution": "不要把转化理解为保留原有法强收益。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-157",
+        "augment-1206"
+      ]
+    },
+    {
+      "championId": "22",
+      "augmentId": "1081",
+      "reason": "持续普攻路线可以练习叠加与走位。",
+      "caution": "失去攻击机会时需要重新建立节奏。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-22",
+        "augment-1081"
+      ]
+    },
+    {
+      "championId": "22",
+      "augmentId": "1077",
+      "reason": "暴击路线可用于观察续航条件。",
+      "caution": "艾希的特殊暴击交互需单独核对。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-22",
+        "augment-1077"
+      ]
+    },
+    {
+      "championId": "22",
+      "augmentId": "1170",
+      "reason": "额外射程用于练习安全距离。",
+      "caution": "射程不能代替对突进的防备。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-22",
+        "augment-1170"
+      ]
+    },
+    {
+      "championId": "887",
+      "augmentId": "3078",
+      "reason": "练习技能后衔接普攻并调整站位。",
+      "caution": "伤害分支待核对，不计算理论收益。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-887",
+        "augment-3078"
+      ]
+    },
+    {
+      "championId": "887",
+      "augmentId": "1004",
+      "reason": "演示以基础技能为中心的替代玩法。",
+      "caution": "终极技能被封印，失去重要作战手段。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-887",
+        "augment-1004"
+      ]
+    },
+    {
+      "championId": "887",
+      "augmentId": "1389",
+      "reason": "演示属性与兵线推进的取舍。",
+      "caution": "不要为了增强小兵忽视团战站位。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-887",
+        "augment-1389"
+      ]
+    },
+    {
+      "championId": "777",
+      "augmentId": "3048",
+      "reason": "练习技能与普攻之间的连续衔接。",
+      "caution": "弹跳不保证命中期望的目标。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-777",
+        "augment-3048"
+      ]
+    },
+    {
+      "championId": "777",
+      "augmentId": "1058",
+      "reason": "持续攻击时观察技能循环变化。",
+      "caution": "撤离时机仍需独立判断。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-777",
+        "augment-1058"
+      ]
+    },
+    {
+      "championId": "777",
+      "augmentId": "3078",
+      "reason": "用强化普攻后的移速练习进退。",
+      "caution": "增益持续短，不保证安全撤离。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-777",
+        "augment-3078"
+      ]
+    },
+    {
+      "championId": "114",
+      "augmentId": "1058",
+      "reason": "练习攻击与基础技能循环。",
+      "caution": "招架时机不能只依赖缩减冷却。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-114",
+        "augment-1058"
+      ]
+    },
+    {
+      "championId": "114",
+      "augmentId": "3048",
+      "reason": "以技能接普攻观察弹跳与任务进度。",
+      "caution": "弹跳任务不能替代破绽判断。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-114",
+        "augment-3048"
+      ]
+    },
+    {
+      "championId": "114",
+      "augmentId": "3078",
+      "reason": "强化普攻与短时移速用于练习追击。",
+      "caution": "不要为触发普攻承受过多集火。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-114",
+        "augment-3078"
+      ]
+    },
+    {
+      "championId": "4",
+      "augmentId": "2062",
+      "reason": "演示以技能复制为中心的施法路线。",
+      "caution": "所选技能未确认，不能承诺复制特定控制。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-4",
+        "augment-2062"
+      ]
+    },
+    {
+      "championId": "4",
+      "augmentId": "3075",
+      "reason": "练习施法后位移与输出位置。",
+      "caution": "后退可能影响站位，所选技能待核对。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-4",
+        "augment-3075"
+      ]
+    },
+    {
+      "championId": "4",
+      "augmentId": "1004",
+      "reason": "演示基础技能输出和控制路线。",
+      "caution": "终极技能被封印，失去原有支援方式。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-4",
+        "augment-1004"
+      ]
+    },
+    {
+      "championId": "360",
+      "augmentId": "1134",
+      "reason": "演示改变攻击距离后的近身路线。",
+      "caution": "变为近战后风险提高，先确认进场窗口。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-360",
+        "augment-1134"
+      ]
+    },
+    {
+      "championId": "360",
+      "augmentId": "3048",
+      "reason": "观察技能与普攻交替时的触发机会。",
+      "caution": "不要据此推断终极技能会触发弹跳。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-360",
+        "augment-3048"
+      ]
+    },
+    {
+      "championId": "360",
+      "augmentId": "1389",
+      "reason": "演示直接属性收益和推进节奏。",
+      "caution": "不保证能够抵消进场后的集火。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-360",
+        "augment-1389"
+      ]
+    },
+    {
+      "championId": "51",
+      "augmentId": "1134",
+      "reason": "用于比较舍弃远程距离后的玩法变化。",
+      "caution": "会失去重要射程优势，不作为默认推荐。",
+      "recommendationOrder": 1,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-51",
+        "augment-1134"
+      ]
+    },
+    {
+      "championId": "51",
+      "augmentId": "1170",
+      "reason": "练习围绕远程攻击距离保持站位。",
+      "caution": "具体增加距离待核对。",
+      "recommendationOrder": 2,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-51",
+        "augment-1170"
+      ]
+    },
+    {
+      "championId": "51",
+      "augmentId": "1389",
+      "reason": "演示属性增益与兵线推进的关系。",
+      "caution": "推进时仍需观察侧面突进。",
+      "recommendationOrder": 3,
+      "isExample": true,
+      "stats": null,
+      "sourceIds": [
+        "editorial",
+        "champion-51",
+        "augment-1389"
+      ]
+    }
+  ],
+  "builds": [
+    {
+      "id": "build-157-01",
+      "championId": "157",
+      "name": "持续普攻示例",
+      "intent": "练习攻速、暴击与续航的购买顺序。",
+      "startingItems": [
+        {
+          "itemId": "3177",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3006",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "3153",
+        "3031",
+        "3072"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3072",
+          "withItemId": "6333",
+          "condition": "物理爆发压力较大且希望尝试防守取舍时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-157"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-22-01",
+      "championId": "22",
+      "name": "远程持续输出示例",
+      "intent": "练习在安全距离持续普攻。",
+      "startingItems": [
+        {
+          "itemId": "3184",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3006",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "6672",
+        "3085",
+        "3031"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3085",
+          "withItemId": "3036",
+          "condition": "对方护甲较高，希望比较穿甲与多目标输出时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-22"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-887-01",
+      "championId": "887",
+      "name": "近身法术输出示例",
+      "intent": "练习法强、攻速与持续作战的组合。",
+      "startingItems": [
+        {
+          "itemId": "3112",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3020",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "3115",
+        "4633",
+        "3089"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3089",
+          "withItemId": "3157",
+          "condition": "需要应对关键爆发并练习主动保命时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-887"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-777-01",
+      "championId": "777",
+      "name": "普攻与暴击示例",
+      "intent": "练习连续攻击后的续航取舍。",
+      "startingItems": [
+        {
+          "itemId": "3177",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3006",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "3153",
+        "3031",
+        "3072"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3072",
+          "withItemId": "6333",
+          "condition": "物理爆发压力较大时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-777"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-114-01",
+      "championId": "114",
+      "name": "基础技能持续作战示例",
+      "intent": "练习技能、普攻与生存装备的组合。",
+      "startingItems": [
+        {
+          "itemId": "3177",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3111",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "3074",
+        "3078",
+        "6610"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "6610",
+          "withItemId": "6333",
+          "condition": "希望提高对物理伤害的应对能力时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-114"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-4-01",
+      "championId": "4",
+      "name": "法术施法示例",
+      "intent": "练习选牌后施法与强化攻击的衔接。",
+      "startingItems": [
+        {
+          "itemId": "3112",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3020",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "6655",
+        "3100",
+        "3089"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3089",
+          "withItemId": "3157",
+          "condition": "关键爆发难以回避，需要主动保命时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-4"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-360-01",
+      "championId": "360",
+      "name": "进场暴击示例",
+      "intent": "练习暴击输出与生命偷取的组合。",
+      "startingItems": [
+        {
+          "itemId": "3184",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3047",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "6676",
+        "3031",
+        "3072"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3072",
+          "withItemId": "3156",
+          "condition": "魔法爆发压力较大时；先核对装备互斥条件。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-360"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    },
+    {
+      "id": "build-51-01",
+      "championId": "51",
+      "name": "远程暴击示例",
+      "intent": "练习攻击距离与暴击装备的组合。",
+      "startingItems": [
+        {
+          "itemId": "3184",
+          "quantity": 1
+        },
+        {
+          "itemId": "2003",
+          "quantity": 1
+        }
+      ],
+      "boots": {
+        "itemId": "3006",
+        "condition": "默认练习路线；对局可购买性、金币与属性请以客户端为准。"
+      },
+      "coreItemIds": [
+        "6676",
+        "3031",
+        "3094"
+      ],
+      "alternatives": [
+        {
+          "replaceItemId": "3094",
+          "withItemId": "3036",
+          "condition": "对方护甲较高，愿意舍弃部分射程收益时。"
+        }
+      ],
+      "isExample": true,
+      "sourceIds": [
+        "editorial",
+        "champion-51"
+      ],
+      "note": "示例出装，仅供练习。未核对当前模式价格、库存和最优性；鞋子独立于核心三件。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "editorial",
+      "title": "人工示例内容",
+      "url": "",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "manual-example",
+      "licenseNote": "本项目人工编写，仅供练习。"
+    },
+    {
+      "id": "asset-index",
+      "title": "现有本地图片资源索引",
+      "url": "assets/aramkit/index.json",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "asset-provenance",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-157",
+      "title": "亚索公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/yasuo",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-22",
+      "title": "艾希公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/ashe",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-887",
+      "title": "格温公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/gwen",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-777",
+      "title": "永恩公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/yone",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-114",
+      "title": "菲奥娜公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/fiora",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-4",
+      "title": "崔斯特公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/twisted-fate",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-360",
+      "title": "莎弥拉公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/samira",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "champion-51",
+      "title": "凯特琳公开详情",
+      "url": "https://aramkit.cn/zh-CN/champions/caitlyn",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "research-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-3048",
+      "title": "弹跳蜜蜂公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/bouncing-bees",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1058",
+      "title": "秘术冲拳公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/mystic-punch",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-3078",
+      "title": "鼓声暴起 低音轰鸣公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/the-boom-and-the-bass",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1134",
+      "title": "亮出你的剑公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/draw-your-sword",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1004",
+      "title": "回归基本功公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/back-to-basics",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1389",
+      "title": "男爵之手公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/hand-of-baron",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-2062",
+      "title": "回响施放公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/echo-cast",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-3075",
+      "title": "反冲公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/recoil",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1081",
+      "title": "踢踏舞公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/tap-dancer",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1206",
+      "title": "魔法转物理公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/escapade",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1077",
+      "title": "灵魂虹吸公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/soul-siphon",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    },
+    {
+      "id": "augment-1170",
+      "title": "万用瞄准镜公开详情",
+      "url": "https://aramkit.cn/zh-CN/augments/scoped-weapons",
+      "accessedAt": "2026-11-17T04:28:18.010843+00:00",
+      "contentType": "game-reference",
+      "licenseNote": "研究参考不代表数据或图片再分发授权。"
+    }
+  ]
+}

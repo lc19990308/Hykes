@@ -1,0 +1,31 @@
+# Local research, third-party game art and development tools
+/原型图/*
+!/原型图/data/
+/原型图/data/*
+!/原型图/data/demo-0.1.json
+/app/assets/aramkit/
+/tools/
+
+# Build and runtime output
+/backend/target/
+/backend/content/*
+!/backend/content/README.md
+
+# Machine-specific configuration and credentials
+.DS_Store
+.idea/
+.vscode/
+.dsh/
+.env
+.env.*
+*.local
+*.log
+__pycache__/
+local.properties
+key.properties
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+*.pem
+*.key

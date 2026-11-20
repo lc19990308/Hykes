@@ -1,0 +1,42 @@
+name: app
+description: "海斗宝典（Hykes）· Flutter 工程模版：7 类页面骨架 + 设计体系 Token 主题。"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Flutter 3.47+ 官方 Material 组件库（package:flutter/material.dart 的替代）。
+  material_ui: ^1.1.0
+
+  # 内容包原始字节校验与应用私有目录中的原子缓存。
+  crypto: ^3.0.8
+  path_provider: ^2.1.6
+
+  # 本机键值存储：收藏 / 最近查看 / 外观的平台等价物（PRD §11.3 的
+  # haidou.favorites.v1 / haidou.recents.v1 与 §20.3 的 haidou.theme.v1）。
+  # 选用理由：web 原型用 localStorage，Flutter 平台对应物即 SharedPreferences；
+  # 不引入数据库或云同步（需求说明 8 不纳入 v1.0）。
+  shared_preferences: ^2.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 推荐的 Flutter 代码规范集合（analysis_options.yaml 引用）。
+  flutter_lints: ^6.0.0
+
+# 资源说明：
+# - assets/data/        首版内容数据与页面状态（来自 ../原型图/data）
+# - assets/icons/lucide 本地功能图标（Lucide 0.468.0，许可证随目录保留）
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/demo-0.1.json
+    - assets/data/design-states.json
+    - assets/icons/lucide/
